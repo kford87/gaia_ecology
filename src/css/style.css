@@ -1,0 +1,171 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-wrapper {
+    z-index: 99;
+    border-bottom: 3px solid #4caf50;
+}
+
+#brand-image {
+    height: 50px;
+    margin: 7px 14px;
+}
+
+.brand-logo {
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: 99;
+}
+
+.brand-logo-light {
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background: url(../assets/img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 5px solid #1B5E20;
+
+}
+
+.header-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-logo>img {
+    -webkit-filter: drop-shadow(5px 5px 5px #22222296);
+    filter: drop-shadow(5px 5px 5px #22222296);
+}
+
+.header-title {
+    z-index: 99;
+
+}
+
+.header-title>h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 100%;
+
+}
+
+.header-title>.header-light {
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(42, 39, 39);
+    background: radial-gradient(circle, rgba(42, 39, 39, 0.6979166666666667) 7%, rgba(43, 46, 44, 0.16850490196078427) 100%);
+}
+
+.read-more-btn {
+    padding: 5px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.read-more-btn:hover {
+    background-color: #fff;
+    color: #1B5E20;
+}
+
+.justified {
+    text-align: justify;
+}
+
+#about {
+    padding: 20px 0 40px 0;
+}
+#species {
+    padding: 30px 0;
+}
+
+.species-container {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bat-image { 
+   margin-left: 25px;
+   filter: brightness(0) invert(1);
+}
+
+#mouse-image { 
+    margin-top: 20px;
+    filter: brightness(0) invert(1);
+}
+
+#reptile-image{
+    filter: brightness(0) invert(1);
+}
+
+#testimonial {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url(../assets/img/beetle.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        border-top: 3px solid #4caf50;
+    border-bottom: 5px solid #1B5E20;
+
+}
+
+.testimonial-container {
+    position:absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(42,39,39);
+    background: linear-gradient(310deg, rgba(42,39,39,0.6979166666666667) 7%, rgba(43,46,44,0.16850490196078427) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.quotation {
+    width: 40px;
+    filter: brightness(0) invert(1);
+}
+
+#contact {
+    padding: 20px 0 40px 0;
+}
+
+.social-media-icon {
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
