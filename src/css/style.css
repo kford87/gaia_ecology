@@ -1,14 +1,31 @@
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-align: center;
 }
+
+.justified {
+    text-align: justify;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+/* Navigation */
 
 .nav-wrapper {
     z-index: 99;
     border-bottom: 3px solid #4caf50;
+
 }
 
+/*brand image and logo*/
+
 #brand-image {
-    height: 50px;
+    height: 45px;
     margin: 7px 14px;
 }
 
@@ -22,39 +39,40 @@ p {
     font-weight: 300;
     text-transform: capitalize;
 }
-
+ /*Header*/
 .header-container {
     position: relative;
     width: 100%;
-    min-height: 50vh;
-    background: url(../assets/img/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    height: 50vh;
+    min-height: 300px; /*min height used for mobiles and smaller screens*/
+    background: url(../assets/img/background.jpg) no-repeat center center fixed; /* Image stays fixed whilst rest of the page scrolls */
+    -webkit-background-size: cover; /*used for non-compatible browers*/
+    -moz-background-size: cover; /*used for non-compatible browers*/
+    -o-background-size: cover; /*used for non-compatible browers*/
     background-size: cover;
-    display: flex;
+    display: flex; /*flex container expands items to fill available space*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-bottom: 5px solid #1B5E20;
-
 }
 
 .header-logo-container {
-    display: flex;
+    display: flex; /*flex container expands items to fill available space*/
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+
 }
 
 .header-logo>img {
-    -webkit-filter: drop-shadow(5px 5px 5px #22222296);
+    -webkit-filter: drop-shadow(5px 5px 5px #22222296); /*used for alternative browners*/
     filter: drop-shadow(5px 5px 5px #22222296);
+    width: 200px;
 }
 
 .header-title {
-    z-index: 99;
-
+    z-index: 99; /*ensures writing in front of background picture*/
 }
 
 .header-title>h1 {
@@ -74,21 +92,22 @@ p {
 
 .header-background {
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(42, 39, 39);
+    background: rgb(42, 39, 39); /*background filter to ensure logo and title stand out more*/
     background: radial-gradient(circle, rgba(42, 39, 39, 0.6979166666666667) 7%, rgba(43, 46, 44, 0.16850490196078427) 100%);
 }
-
+ /*Read more button*/
 .read-more-btn {
     padding: 5px 10px;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.5rem;
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: 5px; /*curved corners on button - looks more attractive*/
 }
 
 .read-more-btn:hover {
@@ -103,6 +122,8 @@ p {
 #about {
     padding: 20px 0 40px 0;
 }
+
+/*Species surveys*/
 #species {
     padding: 30px 0;
 }
@@ -128,11 +149,12 @@ p {
     filter: brightness(0) invert(1);
 }
 
+/*Testimonial section*/
 #testimonial {
     position: relative;
     width: 100%;
     height: 350px;
-    background: url(../assets/img/beetle.jpg) no-repeat center center;
+    background: url(../assets/img/beetle.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -148,7 +170,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(42,39,39);
+    background: rgb(42,39,39); /*filter to ensure white writing stands out*/
     background: linear-gradient(310deg, rgba(42,39,39,0.6979166666666667) 7%, rgba(43,46,44,0.16850490196078427) 100%);
     display: flex;
     justify-content: center;
@@ -156,6 +178,7 @@ p {
     flex-direction: column;    
 }
 
+/*Contact us*/
 .quotation {
     width: 40px;
     filter: brightness(0) invert(1);
@@ -167,5 +190,36 @@ p {
 
 .social-media-icon {
     width: 50px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); /*white so stands out against green footer*/
 }
+
+/*Responsive design*/
+@media only screen and (max-width: 992px) {
+    .header-logo>img {
+        width: 150px;
+    }
+    .header-title>h1{
+        font-size: 75px;
+    }  
+    .testimonial-content>h3 {
+        font-size: 2rem;
+    }
+    .testimonial-content>h3>img {
+        width: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #brand-image {
+        height: 40px;
+        margin: 7px 14px;
+    }
+    .header-logo>img {
+        width: 100px;
+    }
+    .header-title>h1{
+        font-size: 50px;
+    }
+ }
+
+ 
