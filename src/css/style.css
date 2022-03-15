@@ -1,225 +1,239 @@
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.15rem;
-    font-size: 1.15rem;
-    font-weight: 400;
-    text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.15rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .justified {
-    text-align: justify;
+  text-align: justify;
 }
 
 .font-weight-300 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 /* Navigation */
 
-.nav-wrapper {
-    z-index: 99;
-    border-bottom: 3px solid #4caf50;
+html {
+  scroll-padding-top: 64px; 
+  /*as nav bar is fixed, the padding ensures that when the user clicks on the about us/services/contact
+  sections that top isnt hidden behind that nav bar*/
+}
 
+.nav-wrapper {
+  z-index: 99;
+  border-bottom: 3px solid #4caf50;
 }
 
 /*brand image and logo*/
 
 #brand-image {
-    height: 45px;
-    margin: 7px 14px;
+  height: 45px;
+  margin: 7px 14px;
 }
 
 .brand-logo {
-    font-weight: 500;
-    text-transform: uppercase;
-    z-index: 99;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 99;
 }
 
 .brand-logo-light {
-    font-weight: 300;
-    text-transform: capitalize;
+  font-weight: 300;
+  text-transform: capitalize;
 }
- /*Header*/
+/*Header*/
 .header-container {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    min-height: 300px; /*min height used for mobiles and smaller screens*/
-    background: url(../assets/img/background.jpg) no-repeat center center fixed; /* Image stays fixed whilst rest of the page scrolls */
-    -webkit-background-size: cover; /*used for non-compatible browers*/
-    -moz-background-size: cover; /*used for non-compatible browers*/
-    -o-background-size: cover; /*used for non-compatible browers*/
-    background-size: cover;
-    display: flex; /*flex container expands items to fill available space*/
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-bottom: 5px solid #1B5E20;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  min-height: 300px; /*min height used for mobiles and smaller screens*/
+  background: url(../assets/img/background.jpg) no-repeat center center fixed; /* Image stays fixed whilst rest of the page scrolls */
+  -webkit-background-size: cover; /*used for non-compatible browers*/
+  -moz-background-size: cover; /*used for non-compatible browers*/
+  -o-background-size: cover; /*used for non-compatible browers*/
+  background-size: cover;
+  display: flex; /*flex container expands items to fill available space*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid #1b5e20;
 }
 
 .header-logo-container {
-    display: flex; /*flex container expands items to fill available space*/
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-
+  display: flex; /*flex container expands items to fill available space*/
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.header-logo>img {
-    -webkit-filter: drop-shadow(5px 5px 5px #22222296); /*used for alternative browners*/
-    filter: drop-shadow(5px 5px 5px #22222296);
-    width: 200px;
+.header-logo > img {
+  -webkit-filter: drop-shadow(
+    5px 5px 5px #22222296
+  ); /*used for alternative browners*/
+  filter: drop-shadow(5px 5px 5px #22222296);
+  width: 200px;
 }
 
 .header-title {
-    z-index: 99; /*ensures writing in front of background picture*/
+  z-index: 99; /*ensures writing in front of background picture*/
 }
 
-.header-title>h1 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 100px;
-    margin: 0;
-    text-transform: uppercase;
-    line-height: 100%;
-
+.header-title > h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 100%;
 }
 
-.header-title>.header-light {
-    font-weight: 300;
-    text-transform: capitalize;
+.header-title > .header-light {
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 .header-background {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(42, 39, 39); /*background filter to ensure logo and title stand out more*/
-    background: radial-gradient(circle, rgba(42, 39, 39, 0.6979166666666667) 7%, rgba(43, 46, 44, 0.16850490196078427) 100%);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(
+    42,
+    39,
+    39
+  ); /*background filter to ensure logo and title stand out more*/
+  background: radial-gradient(
+    circle,
+    rgba(42, 39, 39, 0.6979166666666667) 7%,
+    rgba(43, 46, 44, 0.16850490196078427) 100%
+  );
 }
- /*Read more button*/
+/*Read more button*/
 .read-more-btn {
-    padding: 5px 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    border: 1px solid #fff;
-    border-radius: 5px; /*curved corners on button - looks more attractive*/
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 5px; /*curved corners on button - looks more attractive*/
 }
 
 .read-more-btn:hover {
-    background-color: #fff;
-    color: #1B5E20;
+  background-color: #fff;
+  color: #1b5e20;
 }
 
 .justified {
-    text-align: justify;
+  text-align: justify;
 }
 
 #about {
-    padding: 20px 0 40px 0;
+  padding: 20px 0 40px 0;
 }
 
 /*Species surveys*/
 #species {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .species-container {
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#bat-image { 
-   margin-left: 25px;
-   filter: brightness(0) invert(1);
+#bat-image {
+  margin-left: 25px;
+  filter: brightness(0) invert(1);
 }
 
-#mouse-image { 
-    margin-top: 20px;
-    filter: brightness(0) invert(1);
+#mouse-image {
+  margin-top: 20px;
+  filter: brightness(0) invert(1);
 }
 
-#reptile-image{
-    filter: brightness(0) invert(1);
+#reptile-image {
+  filter: brightness(0) invert(1);
 }
 
 /*Testimonial section*/
 #testimonial {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    background: url(../assets/img/beetle.jpg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-        border-top: 3px solid #4caf50;
-    border-bottom: 5px solid #1B5E20;
-
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: url(../assets/img/beetle.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: 3px solid #4caf50;
+  border-bottom: 5px solid #1b5e20;
 }
 
 .testimonial-container {
-    position:absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(42,39,39); /*filter to ensure white writing stands out*/
-    background: linear-gradient(310deg, rgba(42,39,39,0.6979166666666667) 7%, rgba(43,46,44,0.16850490196078427) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;    
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(42, 39, 39); /*filter to ensure white writing stands out*/
+  background: linear-gradient(
+    310deg,
+    rgba(42, 39, 39, 0.6979166666666667) 7%,
+    rgba(43, 46, 44, 0.16850490196078427) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*Contact us*/
 .quotation {
-    width: 40px;
-    filter: brightness(0) invert(1);
+  width: 40px;
+  filter: brightness(0) invert(1);
 }
 
 #contact {
-    padding: 20px 0 40px 0;
+  padding: 20px 0 40px 0;
 }
 
 .social-media-icon {
-    width: 50px;
-    filter: brightness(0) invert(1); /*white so stands out against green footer*/
+  width: 50px;
+  filter: brightness(0) invert(1); /*white so stands out against green footer*/
 }
 
 /*Responsive design*/
 @media only screen and (max-width: 992px) {
-    .header-logo>img {
-        width: 150px;
-    }
-    .header-title>h1{
-        font-size: 75px;
-    }  
-    .testimonial-content>h3 {
-        font-size: 2rem;
-    }
-    .testimonial-content>h3>img {
-        width: 2rem;
-    }
+  .header-logo > img {
+    width: 150px;
+  }
+  .header-title > h1 {
+    font-size: 75px;
+  }
+  .testimonial-content > h3 {
+    font-size: 2rem;
+  }
+  .testimonial-content > h3 > img {
+    width: 2rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    #brand-image {
-        height: 40px;
-        margin: 7px 14px;
-    }
-    .header-logo>img {
-        width: 100px;
-    }
-    .header-title>h1{
-        font-size: 50px;
-    }
- }
-
- 
+  #brand-image {
+    height: 40px;
+    margin: 7px 14px;
+  }
+  .header-logo > img {
+    width: 100px;
+  }
+  .header-title > h1 {
+    font-size: 50px;
+  }
+}
