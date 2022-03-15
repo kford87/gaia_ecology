@@ -24,7 +24,7 @@ CSS
 
 
 used a front end frame work (materializecss) - was advised not to use bootstrap as many examples use JQuery. JQuery has fallen out of favour. Materializecss has examples with both JQuery and vanilla javaScript (mike pointed this one out as it was slightly less complicated than other options but also has less features)
-- Downloaded instead of using a CDN (dont know what it stands for but is a link to a file on the  internet)
+- Downloaded instead of using a CDN (dont know what it stands for but is a link to a file on the internet)
   
 learnt about rows and columns (responsive design)
 how to use external fonts using links (googlefonts)
